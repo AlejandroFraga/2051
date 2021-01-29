@@ -1,1 +1,1 @@
-# GlobalGameJam-2021
+# [Global Game Jam](https://globalgamejam.org) 2021
