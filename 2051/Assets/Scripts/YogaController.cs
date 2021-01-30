@@ -4,17 +4,7 @@ using UnityEngine.UI;
 
 public class YogaController : MonoBehaviour
 {
-    public Slider m_VideoSlider = default;
-
-    public List<Sprite> m_Postures = default;
-
-    public Image m_VideoPostureImage = default;
-
-    public int m_VideoPosture = 0;
-
-    public Image m_SelectedPostureImage = default;
-
-    public int m_SelectedPosture = 0;
+    [Header("Gameplay")]
 
     [Tooltip("Minimum number of postures in the mini-game.")]
     public int m_MinPostures = 3;
@@ -27,16 +17,33 @@ public class YogaController : MonoBehaviour
 
     private bool m_Holding = false;
 
+    [Header("Video posture")]
+
+    public List<Sprite> m_VideoPostures = default;
+
+    public int m_VideoPosture = 0;
+
+    public Image m_VideoPostureImage = default;
+
+    public Slider m_VideoSlider = default;
+
+    [Header("Player posture")]
+
+    public List<Sprite> m_Postures = default;
+
+    public int m_SelectedPosture = 0;
+
+    public Image m_SelectedPostureImage = default;
+
     // Start is called before the first frame update
     void Start()
     {
-        if (!m_VideoPostureImage) return;
+        if (!m_VideoPostureImage || m_VideoPostures.Count < 1) return;
 
-        for (int i = 0; i < m_Postures.Count; i++)
-        {
-            if (m_Postures[i] == m_VideoPostureImage.sprite)
-                m_VideoPosture = i;
-        }
+        UpdateNumberOfPostures();
+
+        UpdateVideoPosture();
+
     }
 
     // Update is called once per frame
@@ -44,9 +51,26 @@ public class YogaController : MonoBehaviour
     {
         if (m_Holding)
         {
-            m_VideoSlider.value += Time.deltaTime;
-            m_VideoSlider.value %= m_VideoSlider.maxValue;
+            m_VideoSlider.value = Mathf.Min(m_VideoSlider.value + Time.deltaTime, m_VideoSlider.maxValue);
+
+            if (m_VideoSlider.value == m_VideoSlider.maxValue)
+            {
+                m_VideoSlider.value = 0;
+                UpdateVideoPosture();
+            }
         }
+    }
+
+    void UpdateNumberOfPostures()
+    {
+        m_NPostures = NumberHelper.RandomInRange(m_MinPostures, m_MaxPostures);
+    }
+
+    void UpdateVideoPosture()
+    {
+        m_VideoPosture = NumberHelper.RandomInRange(0, m_VideoPostures.Count - 1);
+        m_VideoPostureImage.sprite = m_VideoPostures[m_VideoPosture];
+        m_Holding = false;
     }
 
     public void PreviousPosture()
@@ -66,9 +90,7 @@ public class YogaController : MonoBehaviour
     public void HoldPostureDown()
     {
         if (m_VideoPosture == m_SelectedPosture)
-        {
             m_Holding = true;
-        }
     }
 
     public void HoldPostureUp()
