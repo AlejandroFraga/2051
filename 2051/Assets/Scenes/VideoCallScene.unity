@@ -610,7 +610,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 255, y: 194.66}
+  m_AnchoredPosition: {x: 46.839, y: 82}
   m_SizeDelta: {x: 56.322998, y: 49.745422}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &497884582
@@ -1384,7 +1384,11 @@ MonoBehaviour:
   m_BatteryState: 0
   m_BatteryDuration: 60
   m_UpdatePeriodBattery: 20
-  m_Hour: []
+  m_Hour:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   m_HourImage: {fileID: 1078044232}
   m_HourState: 0
   m_Connection:
@@ -1393,6 +1397,7 @@ MonoBehaviour:
   m_ConnectionImage: {fileID: 1493295712}
   m_ConnectionCheckPeriod: 5
   NoConnection: {fileID: 497884580}
+  m_FlagConnection: 1
   m_RandomFactor: 9
   m_RandomFactorHolder: 0
   m_MessageA: {fileID: 683243354}

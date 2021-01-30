@@ -78,6 +78,7 @@ public class VideoCallController : MonoBehaviour
     { 
         if (Time.time > m_NextBatteryTime) // Lógica de gasto de batería
         {
+            if (m_BatteryState == 3) return;
             m_NextBatteryTime = Time.time + m_UpdatePeriodBattery;
             UpdateBattery();
             UpdateHour();
@@ -151,8 +152,7 @@ public class VideoCallController : MonoBehaviour
     private void SpawnNoConnection()
     {
         // LowBattery Message (called from UpdateConnection)
-        Vector3 NoConnectionPos = new Vector3(Random.Range(-0.7f, 0.7f), Random.Range(-0.4f, 0.4f),0f);
-        Instantiate(NoConnection, NoConnectionPos, Quaternion.identity);
+        NoConnection.transform.position = new Vector3(Random.Range(-40f, 40f), Random.Range(-60f, 60f), 0f);
         NoConnection.SetActive(true);
 
     }
