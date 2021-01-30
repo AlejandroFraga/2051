@@ -34,6 +34,8 @@ public class VideoCallController : MonoBehaviour
 
     public GameObject NoConnection = default;
 
+    public int m_FlagConnection = 1;
+
     public int m_RandomFactor = 9;
 
     public int m_RandomFactorHolder = default;
@@ -57,6 +59,7 @@ public class VideoCallController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        m_FlagConnection = 1;
         m_RandomFactorHolder = m_RandomFactor;
         m_NextBatteryTime = m_UpdatePeriodBattery;
         NoConnection.SetActive(false);
@@ -82,32 +85,31 @@ public class VideoCallController : MonoBehaviour
 
 
         }
-        if (Time.time > m_NextConnectionTime) // Lógica pérdida de conexión
+        if (m_FlagConnection == 1)
         {
-            m_NextConnectionTime = Time.time + m_ConnectionCheckPeriod;
-            UpdateConnection();
-
-
-
-        }
-        if (Time.time > m_timer_mensaje) // Lógica Mensajes Ajenos
-        {
-            ChatPop();
-            m_timer_mensaje = Time.time + m_timer_mensaje_period;
-            if (Random.Range(0, 10) > 4)
+            if (Time.time > m_NextConnectionTime) // Lógica pérdida de conexión
             {
-                ChatPush();
-            }
-            else {
-                MessagePush();
-            
-            }
+                m_NextConnectionTime = Time.time + m_ConnectionCheckPeriod;
+                UpdateConnection();
 
-        }
-        if (Time.time > m_NextConnectionTime) // Lógica Mensajes propios
-        {
-            m_NextConnectionTime = Time.time + m_ConnectionCheckPeriod;
-            UpdateConnection();
+
+
+            }
+            if (Time.time > m_timer_mensaje) // Lógica Mensajes Ajenos
+            {
+                ChatPop();
+                m_timer_mensaje = Time.time + m_timer_mensaje_period;
+                if (Random.Range(0, 10) > 4)
+                {
+                    ChatPush();
+                }
+                else
+                {
+                    MessagePush();
+
+                }
+
+            }
         }
     }
 
@@ -134,6 +136,7 @@ public class VideoCallController : MonoBehaviour
         {
             m_ConnectionImage.sprite = m_Connection[1];
             m_RandomFactor = m_RandomFactorHolder;
+            m_FlagConnection = 0;
             SpawnNoConnection();
 
 
@@ -148,9 +151,9 @@ public class VideoCallController : MonoBehaviour
     private void SpawnNoConnection()
     {
         // LowBattery Message (called from UpdateConnection)
-        //Vector2 NoConnectionPos = new Vector2(Random.Range(-0.3f, 0.3f), Random.Range(-0.1f, 0.1f));
-        Vector2 NoConnectionPos = new Vector2(100, 100);
+        Vector3 NoConnectionPos = new Vector3(Random.Range(-0.7f, 0.7f), Random.Range(-0.4f, 0.4f),0f);
         Instantiate(NoConnection, NoConnectionPos, Quaternion.identity);
+        NoConnection.SetActive(true);
 
     }
 
@@ -159,6 +162,7 @@ public class VideoCallController : MonoBehaviour
         // LowBattery Message (called from battery degradation)
         //GameObjectHelper.SetVisible('imagen', false);
         m_ConnectionImage.sprite = m_Connection[0];
+        m_FlagConnection = 1;
         NoConnection.SetActive(false);
 
 
