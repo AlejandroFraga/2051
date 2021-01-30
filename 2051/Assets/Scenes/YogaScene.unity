@@ -1870,7 +1870,7 @@ MonoBehaviour:
   m_TimeToHold: 0
   m_MinTimeToHold: 2
   m_MaxTimeToHold: 3
-  m_CountdownTime: 3
+  m_CountdownTime: 5
   m_MsBeforeCountdown: 2000
   m_Countdown: 0
   m_ScreenMessage: {fileID: 2049464648}
