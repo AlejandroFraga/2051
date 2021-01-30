@@ -9,7 +9,7 @@ public class YogaController : MonoBehaviour
     [Tooltip("Number of postures to do in the mini-game.")]
     public int m_NumPostures = 4;
 
-    List<int> m_DonePostures = new List<int>();
+    List<int> m_DonePostures = default;
 
     [ReadOnly]
     public float m_TimeToHold = default;
@@ -32,6 +32,8 @@ public class YogaController : MonoBehaviour
     bool m_Holding = false;
 
     bool m_Completed = false;
+
+    int m_Points = 0;
 
     [Header("Video posture")]
 
@@ -71,6 +73,16 @@ public class YogaController : MonoBehaviour
     {
         if (!m_VideoPostureImage || m_VideoPostures.Count < 1) return;
 
+        // FIXME
+        m_Completed = false;
+        m_DonePostures = new List<int>();
+        for (int i = 0; i < m_VideoSliders.Count; i++)
+        {
+            m_VideoSliders[i].value = 0;
+            m_VideoSlidersFills[i].sprite = m_VideoSliderFillMain;
+        }
+        // FIXME
+
         m_VideoSlider = m_VideoSliders[m_DonePostures.Count];
 
         UpdateTimeToHold();
@@ -101,8 +113,15 @@ public class YogaController : MonoBehaviour
 
             if (!NewPosture())
             {
-                m_ScreenMessage.text = "Completed!";
-                m_Completed = true;
+                if (m_Points > 2)
+                {
+                    m_ScreenMessage.text = "Completed!";
+                    m_Completed = true;
+                }
+                else
+                {
+                    Start();
+                }
             }
         }
         else if (m_Holding)
@@ -112,6 +131,8 @@ public class YogaController : MonoBehaviour
             if (m_VideoSlider.value == m_VideoSlider.maxValue)
             {
                 m_VideoSlidersFills[m_DonePostures.Count - 1].sprite = m_VideoSliderFillGreen;
+
+                m_Points++;
 
                 m_ScreenMessage.text = "Nice!";
 
