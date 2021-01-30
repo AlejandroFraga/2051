@@ -32,15 +32,17 @@ public class VideoCallController : MonoBehaviour
 
     public float m_ConnectionCheckPeriod = 5.0f;
 
-    public int m_RandomFactor=9
+    public int m_RandomFactor = 9;
 
-//    public List<string> m_ChatEvents = default;
+    public int m_RandomFactorHolder = default;
 
-//    public Image m_MessageA = default;
+    //    public List<string> m_ChatEvents = default;
 
-//    public Image m_MessageB = default;
+    //    public Image m_MessageA = default;
 
-//    public Image m_RandomMessage = default;
+    //    public Image m_MessageB = default;
+
+    //    public Image m_RandomMessage = default;
 
 
 
@@ -49,7 +51,7 @@ public class VideoCallController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        m_RandomFactorHolder= m_RandomFactor
+        m_RandomFactorHolder = m_RandomFactor;
     }
 
     // Update to modify hour and battery
@@ -103,7 +105,7 @@ public class VideoCallController : MonoBehaviour
 
         }
         else {
-            m_RandomFactor--
+            m_RandomFactor--;
         }
 
     }
@@ -135,7 +137,4 @@ public class VideoCallController : MonoBehaviour
 
         
     }
-
-
-
 }
