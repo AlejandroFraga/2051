@@ -15,4 +15,28 @@ public static class NumberHelper
         // + 1 to include the max value also in the posible values
         return m_Random.Next() % (max + 1 - min) + min;
     }
+
+    /// <summary>
+    /// Returns a random number in the range {min, max}.
+    /// </summary>
+    /// <param name="min">Minimum value</param>
+    /// <param name="max">Maximum value</param>
+    /// <returns>Returns the random number</returns>
+    public static float RandomInRange(float min, float max)
+    {
+        // + 1 to include the max value also in the posible values
+        return (float)(m_Random.NextDouble() % (max + 1 - min) + min);
+    }
+
+    /// <summary>
+    /// Returns a random number in the range {min, max}.
+    /// </summary>
+    /// <param name="min">Minimum value</param>
+    /// <param name="max">Maximum value</param>
+    /// <returns>Returns the random number</returns>
+    public static double RandomInRange(double min, double max)
+    {
+        // + 1 to include the max value also in the posible values
+        return m_Random.NextDouble() % (max + 1 - min) + min;
+    }
 }
