@@ -1653,8 +1653,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00012207031}
-  m_SizeDelta: {x: 0, y: 3313}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -100, y: 3313}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1799532248
 MonoBehaviour:
@@ -1675,7 +1675,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Drag ingredients, tap to mix and drag bread
+  m_text: 'Drag ingredients, tap to mix them and drag the breads to the oven
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 73c3fff5b8b58b149b0e6a338f614514, type: 2}
   m_sharedMaterial: {fileID: -2798444550921901312, guid: 73c3fff5b8b58b149b0e6a338f614514,
