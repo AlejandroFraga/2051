@@ -10,6 +10,7 @@ public class FadeOutOnTap : MonoBehaviour
     public float fadeTimeOut;
     public int buttonIndex;
     public bool automaticFadeOut;
+    public bool isEnding;
 
     private CanvasGroup canvasGroup;
 
@@ -18,28 +19,59 @@ public class FadeOutOnTap : MonoBehaviour
     //si esto está a false no empezará la corrutina de fadeout
     private bool canStart;
  
-
+    
     // Start is called before the first frame update
     void Start()
     {
-        
         canvasGroup = GetComponent<CanvasGroup>();
-        sceneController = GameObject.Find("SceneController");
-        if (sceneController.GetComponent<SceneController>().returnIndex() == buttonIndex)
+
+        if (isEnding) {
+            sceneController = GameObject.Find("SceneControllerEnding");
+        } else
         {
-            gameObject.GetComponent<Button>().interactable = true;
+            sceneController = GameObject.Find("SceneController");
+        }
+       
+        
+        print("hello");
+        if (!isEnding)
+        {
+            if (sceneController.GetComponent<SceneController>().returnIndex() == buttonIndex)
+            {
+                gameObject.SetActive(true);
+                //gameObject.GetComponent<Button>().interactable = true;
+            }
+            else
+            {
+                gameObject.SetActive(false);
+                //gameObject.GetComponent<Button>().interactable = false;
+            }
         }
         else {
-            gameObject.GetComponent<Button>().interactable = false;
+            if (sceneController.GetComponent<SceneControllerEnding>().returnIndex() == buttonIndex)
+            {
+                gameObject.SetActive(true);
+                //gameObject.GetComponent<Button>().interactable = true;
+            }
+            else
+            {
+                gameObject.SetActive(false);
+                //gameObject.GetComponent<Button>().interactable = false;
+            }
         }
+        
         canStart = false;
-        StartCoroutine(IFadeOnStart());
+        
     }
 
     // Update is called once per frame
     void Update()
     {
    
+    }
+
+    public void FadeIn() {
+        StartCoroutine(IFadeOnStart());
     }
 
     public void Fade() {
@@ -60,7 +92,16 @@ public class FadeOutOnTap : MonoBehaviour
                 yield return null;
             }
 
-        sceneController.GetComponent<SceneController>().upgradeIndex();
+
+        if (isEnding)
+        {
+            sceneController.GetComponent<SceneControllerEnding>().upgradeIndex();
+        }
+        else
+        {
+            sceneController.GetComponent<SceneController>().upgradeIndex();
+        }
+        
     }
 
     IEnumerator IFadeOnStart()
