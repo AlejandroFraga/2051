@@ -22,20 +22,20 @@ Thanks :)
 
 ### Game design
 
-Eva Pérez (Twitter: @eemepeefe)
+[Eva Pérez](https://twitter.com/eemepeefe)
 
 ### Design & art
 
-Javier Moreno (Twitter: @pitticli_dev)
+[Javier Moreno](https://twitter.com/pitticli_dev)
 
 ### Programming
 
-Alejandro Fraga (https://github.com/AlejandroFraga)
+[Alejandro Fraga](https://github.com/AlejandroFraga)
 
-Javier Pérez (Twitter: @javipercor)
+[Javier Pérez](https://github.com/Javipercor)
 
 ### Music
 
-Carlos de la Fuente (Instagram: @juanmena_music)
+[Carlos de la Fuente](https://www.instagram.com/juanmena_music/?hl=es)
 
-Juan Mena (Twitter: @Carlostrombon7)
+[Juan Mena](https://twitter.com/Carlostrombon7)
