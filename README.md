@@ -1,8 +1,12 @@
 # [2051](https://leavemeal0ne.itch.io/2051)
 
+![Banner 2051](https://github.com/AlejandroFraga/2051/blob/main/images/banner-web.png?raw=true)
+
 Game made fot the [Global Game Jam](https://globalgamejam.org) 2021
 
-it is the year 2051, the year in which you had proposed to open the time capsule that you prepared 30 years ago, which contains the experiences you had in 2020, during the global pandemic caused by COVID-19.
+<img src="https://github.com/AlejandroFraga/2051/blob/main/images/ggj-2021.jpg" width="410" height="180" />
+
+It is the year 2051, the year in which you had proposed to open the time capsule that you prepared 30 years ago, which contains the experiences you had in 2020, during the global pandemic caused by COVID-19.
 
 2051 is a game designed for mobile devices that is composed of several mini-games.
 
@@ -18,24 +22,16 @@ Disclaimer #2: if you have zoom problems on your browser from your computer, try
 
 Thanks :)
 
+## Gameplay
+
+<img src="https://github.com/AlejandroFraga/2051/blob/main/images/02-yoga.png" width="270" height="480" />
+
+<img src="https://github.com/AlejandroFraga/2051/blob/main/images/03-video-call.png" width="270" height="480" />
+
+<img src="https://github.com/AlejandroFraga/2051/blob/main/images/04-bread.png" width="270" height="480" />
+
+<img src="https://github.com/AlejandroFraga/2051/blob/main/images/05-oven.png" width="270" height="480" />
+
 ## Credits
 
-### Game design
-
-[Eva Pérez](https://twitter.com/eemepeefe)
-
-### Design & art
-
-[Javier Moreno](https://twitter.com/pitticli_dev)
-
-### Programming
-
-[Alejandro Fraga](https://github.com/AlejandroFraga)
-
-[Javier Pérez](https://github.com/Javipercor)
-
-### Music
-
-[Carlos de la Fuente](https://www.instagram.com/juanmena_music/?hl=es)
-
-[Juan Mena](https://twitter.com/Carlostrombon7)
+<img src="https://github.com/AlejandroFraga/2051/blob/main/images/credits.png" width="270" height="480" />
