@@ -31,6 +31,9 @@
 		<relationship name="timeline">
 			<destination>{b850d81f-fd2d-4bcd-8d02-03e616cdc614}</destination>
 		</relationship>
+		<relationship name="banks">
+			<destination>{947ccc87-be70-48f0-b964-7bb5c9f4f6c0}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixer" id="{ec1a7bf3-746d-4f0f-b58f-383068893716}">
 		<relationship name="masterBus">
@@ -87,7 +90,7 @@
 	<object class="MixerBusPanner" id="{116336df-5fe1-4a42-b67c-f1132b686a67}" />
 	<object class="SingleSound" id="{4a34b198-6d69-41b6-a6c4-04f894098be9}">
 		<property name="length">
-			<value>1.1799999999999999</value>
+			<value>1.9500000000000002</value>
 		</property>
 		<property name="timelockedOffset">
 			<value>0.25</value>
@@ -104,7 +107,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{dc062fb4-6dd7-40ad-aadf-de10f5afd9d0}">
 		<property name="volume">
-			<value>-8.5</value>
+			<value>-20</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -170,18 +173,18 @@
 	</object>
 	<object class="AutomationPoint" id="{c318f781-1a1a-45aa-a6a8-f832836a257e}">
 		<property name="position">
-			<value>0.7799999999999998</value>
+			<value>1.55</value>
 		</property>
 		<property name="value">
 			<value>1</value>
 		</property>
 		<property name="curveShape">
-			<value>-0.174356624</value>
+			<value>0.25471893</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{898e34ed-cc57-4773-99bf-6eeaeff1fd6b}">
 		<property name="position">
-			<value>1.1799999999999997</value>
+			<value>1.95</value>
 		</property>
 		<property name="value">
 			<value>0</value>
