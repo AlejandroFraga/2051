@@ -11,6 +11,6 @@ public class OvenController : MonoBehaviour
 
     public void OnMouseDown()
     {
-        m_BreadController.GetBread();
+        m_BreadController.GetBreadFromOven();
     }
 }
