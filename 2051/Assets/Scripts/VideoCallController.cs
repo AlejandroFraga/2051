@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class VideoCallController : MonoBehaviour
@@ -147,7 +148,11 @@ public class VideoCallController : MonoBehaviour
                 GameObjectHelper.SetVisible(m_BatteryImage, false);
                 GameObjectHelper.SetVisible(m_HourImage, false);
                 GameObjectHelper.SetVisible(m_ConnectionImage, false);
+
                 PlayerData.m_VideoCallCompleted = true;
+
+                SceneManager.LoadScene("RoomScene");
+
                 return;
             }
             m_NextBatteryTime = Time.time + m_UpdatePeriodBattery;
