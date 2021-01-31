@@ -66,6 +66,10 @@ public class VideoCallController : MonoBehaviour
 
     public float m_timer_mensaje_period = 3.0f;
 
+    public bool m_IsShaking = false;
+
+    public int m_Shake_Force = 3;
+    
 
 
     // Start is called before the first frame update
@@ -92,7 +96,15 @@ public class VideoCallController : MonoBehaviour
 
     // Update to modify hour and battery
     void Update() 
-    { 
+    {
+        if (m_IsShaking)
+        {
+            Vector3 position = NoConnection.transform.position;
+            position.x += m_Shake_Force;
+            m_Shake_Force=-m_Shake_Force;
+            NoConnection.transform.position = position;
+        }
+        
         if (Time.time > m_NextBatteryTime) // Lógica de gasto de batería
         {
             
@@ -189,7 +201,8 @@ public class VideoCallController : MonoBehaviour
     private void SpawnNoConnection()
     {
         // LowBattery Message (called from UpdateConnection)
-        NoConnection.transform.position = new Vector3(Random.Range(100f, 200f) + (Mathf.Sin(Time.time * 1.0f) * 1.0f), Random.Range(100f, 200f) + (Mathf.Sin(Time.time * 1.0f) * 1.0f), 0f);
+        NoConnection.transform.position = new Vector3(Random.Range(100f, 200f), Random.Range(100f, 200f), 0f) ;
+        m_IsShaking = true;
         NoConnection.SetActive(true);
 
 
