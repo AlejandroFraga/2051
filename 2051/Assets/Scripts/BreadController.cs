@@ -108,12 +108,12 @@ public class BreadController : MonoBehaviour
 
     void ChangeToMixing()
     {
-        InitMixing();
-
         m_OvenPanel.SetActive(false);
         m_MixingPanel.SetActive(true);
 
         RestartMixing();
+
+        InitMixing();
     }
 
     void RestartMixing()
