@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{3fe3221e-33d6-4d89-b0ab-3ba83d8b821c}">
+		<property name="assetPath">
+			<value>Respiraciones juntas.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>18.492517006802721</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2055dcde-3a0c-453c-950c-2797b68b159e}</destination>
+		</relationship>
+	</object>
+</objects>

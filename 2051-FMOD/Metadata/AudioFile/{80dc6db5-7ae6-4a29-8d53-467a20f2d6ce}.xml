@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{80dc6db5-7ae6-4a29-8d53-467a20f2d6ce}">
+		<property name="assetPath">
+			<value>teclado4.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.9359999999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2055dcde-3a0c-453c-950c-2797b68b159e}</destination>
+		</relationship>
+	</object>
+</objects>

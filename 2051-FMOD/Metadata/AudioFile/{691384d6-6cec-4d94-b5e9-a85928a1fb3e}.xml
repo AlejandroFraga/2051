@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{691384d6-6cec-4d94-b5e9-a85928a1fb3e}">
+		<property name="assetPath">
+			<value>Harina.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.4309750566893422</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2055dcde-3a0c-453c-950c-2797b68b159e}</destination>
+		</relationship>
+	</object>
+</objects>

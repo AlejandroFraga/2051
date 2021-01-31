@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{58bd893c-79d2-4d63-bc3a-7580c7cccc34}">
+		<property name="name">
+			<value>TAP</value>
+		</property>
+		<relationship name="folder">
+			<destination>{0c452bb3-3c22-4057-bf0d-adbb56ca232c}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{b521c72f-1d58-4bad-9387-85d9a77e7bdb}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{b521c72f-1d58-4bad-9387-85d9a77e7bdb}">
+		<property name="maximum">
+			<value>5</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

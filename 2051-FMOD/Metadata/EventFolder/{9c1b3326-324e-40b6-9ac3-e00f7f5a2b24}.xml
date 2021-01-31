@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="EventFolder" id="{9c1b3326-324e-40b6-9ac3-e00f7f5a2b24}">
+		<property name="name">
+			<value>VIDEOLLAMADA</value>
+		</property>
+		<relationship name="folder">
+			<destination>{1f92f0eb-b000-413f-9f6f-7651b8b8588f}</destination>
+		</relationship>
+	</object>
+</objects>
