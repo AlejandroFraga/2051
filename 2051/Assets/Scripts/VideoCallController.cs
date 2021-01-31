@@ -74,10 +74,21 @@ public class VideoCallController : MonoBehaviour
 
     public Image m_background_fin = default;
 
+    public FMOD.Studio.EventInstance aSoundInstanceTalk;
+    public FMOD.Studio.EventInstance aSoundInstanceTeclado;
+
 
     // Start is called before the first frame update
     void Start()
     {
+
+        aSoundInstanceTalk = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/VIDEOLLAMADA/BLABLA");
+        aSoundInstanceTeclado = FMODUnity.RuntimeManager.CreateInstance("event:/SFX/VIDEOLLAMADA/Teclado");
+
+        aSoundInstanceTalk.start();
+        aSoundInstanceTeclado.start();
+
+
         m_FlagConnection = 1;
         m_RandomFactorHolder = m_RandomFactor;
         m_NextBatteryTime = m_UpdatePeriodBattery;
@@ -236,6 +247,8 @@ public class VideoCallController : MonoBehaviour
         NoConnection.transform.position = new Vector3(Random.Range(100f, 200f), Random.Range(100f, 200f), 0f) ;
         m_IsShaking = true;
         NoConnection.SetActive(true);
+        aSoundInstanceTalk.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        aSoundInstanceTeclado.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
 
 
     }
@@ -246,7 +259,8 @@ public class VideoCallController : MonoBehaviour
         m_ConnectionImage.sprite = m_Connection[0];
         m_FlagConnection = 1;
         NoConnection.SetActive(false);
-
+        aSoundInstanceTalk.start();
+        aSoundInstanceTeclado.start();
 
     }
 
