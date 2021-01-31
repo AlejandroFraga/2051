@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartingScene.unity
+    guid: bea2524522454894b8bfc25421299fb6
+  - enabled: 1
+    path: Assets/Scenes/RoomScene.unity
+    guid: 5153bbb4754f27b41b7cae4ffa17d5ac
+  - enabled: 1
     path: Assets/Scenes/YogaScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -14,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BreadScene.unity
     guid: b836f3ab28409ad498943a561aef1b0e
+  - enabled: 1
+    path: Assets/Scenes/EndingScene.unity
+    guid: 0b08e67cb833c9743bcc6743d8960439
   m_configObjects: {}
