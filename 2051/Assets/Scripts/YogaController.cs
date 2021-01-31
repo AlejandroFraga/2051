@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using TMPro;
 using Unity.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -28,7 +29,7 @@ public class YogaController : MonoBehaviour
     [ReadOnly]
     public float m_Countdown = default;
 
-    public Text m_ScreenMessage = default;
+    public TextMeshProUGUI m_ScreenMessage = default;
 
     bool m_Holding = false;
 
