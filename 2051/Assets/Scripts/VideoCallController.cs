@@ -12,7 +12,7 @@ public class VideoCallController : MonoBehaviour
     
     public int m_BatteryState = 0;
 
-    public float m_BatteryDuration = 60.0f;
+    public float m_BatteryDuration = 70.0f;
 
     private float m_NextBatteryTime = 0.0f;
 
@@ -23,6 +23,10 @@ public class VideoCallController : MonoBehaviour
     public Image m_HourImage = default;
 
     public int m_HourState = 0;
+
+    private float m_NextHourTime = 0.0f;
+
+    public float m_UpdatePeriodHour = 10.0f;
 
     public List<Sprite> m_Connection = default;
 
@@ -62,6 +66,7 @@ public class VideoCallController : MonoBehaviour
         m_FlagConnection = 1;
         m_RandomFactorHolder = m_RandomFactor;
         m_NextBatteryTime = m_UpdatePeriodBattery;
+        m_NextHourTime = m_UpdatePeriodHour;
         NoConnection.SetActive(false);
         m_MessageA.SetActive(false);
         m_MessageB.SetActive(false);
@@ -81,6 +86,13 @@ public class VideoCallController : MonoBehaviour
             if (m_BatteryState == 3) return;
             m_NextBatteryTime = Time.time + m_UpdatePeriodBattery;
             UpdateBattery();
+
+
+
+        }
+        if (Time.time > m_NextHourTime) // Lógica de gasto de batería
+        {
+            m_NextHourTime = Time.time + m_UpdatePeriodHour;
             UpdateHour();
 
 
@@ -124,7 +136,7 @@ public class VideoCallController : MonoBehaviour
 
     public void UpdateHour()
     {
-        //Update Hoour with timer
+        //Update Hour with timer
         m_HourState++;
         m_HourImage.sprite = m_Hour[m_HourState];
 
@@ -152,7 +164,7 @@ public class VideoCallController : MonoBehaviour
     private void SpawnNoConnection()
     {
         // LowBattery Message (called from UpdateConnection)
-        NoConnection.transform.position = new Vector3(Random.Range(-40f, 40f), Random.Range(-60f, 60f), 0f);
+        NoConnection.transform.position = new Vector3(Random.Range(100f, 200f), Random.Range(100f, 200f), 0f);
         NoConnection.SetActive(true);
 
     }
