@@ -1233,12 +1233,12 @@ MonoBehaviour:
   m_Water: {fileID: 1617606071}
   m_BowlStates:
   - {fileID: 21300000, guid: 4bdba02a930d5fb498ad7ae7bf422326, type: 3}
-  - {fileID: 21300000, guid: 3caf50cf03536b64cbfd04326c5f79e0, type: 3}
-  - {fileID: 21300000, guid: f731f68750519f744a5e63c2c66b47ec, type: 3}
-  - {fileID: 21300000, guid: f2bb37988669b724cbbc1dd2cd61f45a, type: 3}
   - {fileID: 21300000, guid: d8f17983b1c1d0141b0d689186c5e57e, type: 3}
   - {fileID: 21300000, guid: 794a9e7dcb9b98a4f81b1b170904ebd6, type: 3}
   - {fileID: 21300000, guid: 57c6b884fbfdfc64aa05580b9b4c9f72, type: 3}
+  - {fileID: 21300000, guid: 3caf50cf03536b64cbfd04326c5f79e0, type: 3}
+  - {fileID: 21300000, guid: f731f68750519f744a5e63c2c66b47ec, type: 3}
+  - {fileID: 21300000, guid: f2bb37988669b724cbbc1dd2cd61f45a, type: 3}
   m_Waters:
   - {fileID: 21300000, guid: de699e7622d6b6842a0baaa0bcdb1503, type: 3}
   - {fileID: 21300000, guid: 3dea247000b006946bf514ad9fc0f450, type: 3}
