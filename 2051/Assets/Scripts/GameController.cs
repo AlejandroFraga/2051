@@ -12,13 +12,19 @@ public class GameController : MonoBehaviour
 
     public GameObject m_YogaCompleted = default;
 
+    public GameObject m_YogaButton = default;
+
     public GameObject m_VideCallBase = default;
 
     public GameObject m_VideCallCompleted = default;
 
+    public GameObject m_VideCallButton = default;
+
     public GameObject m_BreadBase = default;
 
     public GameObject m_BreadCompleted = default;
+
+    public GameObject m_BreadButton = default;
 
     PlayerData playerData = default;
 
@@ -42,12 +48,15 @@ public class GameController : MonoBehaviour
         }
 
         m_BreadBase.SetActive(!playerData.m_BreadCompleted);
+        m_BreadButton.SetActive(!playerData.m_BreadCompleted);
         m_BreadCompleted.SetActive(playerData.m_BreadCompleted);
 
         m_VideCallBase.SetActive(!playerData.m_VideoCallCompleted);
+        m_VideCallButton.SetActive(!playerData.m_VideoCallCompleted);
         m_VideCallCompleted.SetActive(playerData.m_VideoCallCompleted);
 
         m_YogaBase.SetActive(!playerData.m_YogaCompleted);
+        m_YogaButton.SetActive(!playerData.m_YogaCompleted);
         m_YogaCompleted.SetActive(playerData.m_YogaCompleted);
     }
 
