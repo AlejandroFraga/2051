@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class PlayerData
+public static class PlayerData
 {
-    public bool m_YogaCompleted = false;
+    public static bool m_YogaCompleted = false;
 
-    public bool m_VideoCallCompleted = false;
+    public static bool m_VideoCallCompleted = false;
 
-    public bool m_BreadCompleted = false;
+    public static bool m_BreadCompleted = false;
 }

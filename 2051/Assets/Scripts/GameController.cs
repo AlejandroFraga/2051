@@ -26,8 +26,6 @@ public class GameController : MonoBehaviour
 
     public GameObject m_BreadButton = default;
 
-    PlayerData playerData = default;
-
     bool m_Completed = false;
 
     public float m_timeUntilEnd = 5f;
@@ -38,26 +36,24 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerData = SaveSystem.Load();
-
-        if (playerData.m_BreadCompleted && playerData.m_VideoCallCompleted && playerData.m_YogaCompleted)
+        if (PlayerData.m_BreadCompleted && PlayerData.m_VideoCallCompleted && PlayerData.m_YogaCompleted)
         {
             m_Completed = true;
             MarkCompleted();
             return;
         }
 
-        m_BreadBase.SetActive(!playerData.m_BreadCompleted);
-        m_BreadButton.SetActive(!playerData.m_BreadCompleted);
-        m_BreadCompleted.SetActive(playerData.m_BreadCompleted);
+        m_BreadBase.SetActive(!PlayerData.m_BreadCompleted);
+        m_BreadButton.SetActive(!PlayerData.m_BreadCompleted);
+        m_BreadCompleted.SetActive(PlayerData.m_BreadCompleted);
 
-        m_VideCallBase.SetActive(!playerData.m_VideoCallCompleted);
-        m_VideCallButton.SetActive(!playerData.m_VideoCallCompleted);
-        m_VideCallCompleted.SetActive(playerData.m_VideoCallCompleted);
+        m_VideCallBase.SetActive(!PlayerData.m_VideoCallCompleted);
+        m_VideCallButton.SetActive(!PlayerData.m_VideoCallCompleted);
+        m_VideCallCompleted.SetActive(PlayerData.m_VideoCallCompleted);
 
-        m_YogaBase.SetActive(!playerData.m_YogaCompleted);
-        m_YogaButton.SetActive(!playerData.m_YogaCompleted);
-        m_YogaCompleted.SetActive(playerData.m_YogaCompleted);
+        m_YogaBase.SetActive(!PlayerData.m_YogaCompleted);
+        m_YogaButton.SetActive(!PlayerData.m_YogaCompleted);
+        m_YogaCompleted.SetActive(PlayerData.m_YogaCompleted);
     }
 
     public void Update()

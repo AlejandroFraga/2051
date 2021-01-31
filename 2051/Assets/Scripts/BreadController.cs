@@ -281,9 +281,7 @@ public class BreadController : MonoBehaviour
                 m_Completed = true;
 
                 // Save the completed level
-                PlayerData playerData = SaveSystem.Load();
-                playerData.m_BreadCompleted = true;
-                SaveSystem.Save(playerData);
+                PlayerData.m_BreadCompleted = true;
 
                 SceneManager.LoadScene("RoomScene");
             }
