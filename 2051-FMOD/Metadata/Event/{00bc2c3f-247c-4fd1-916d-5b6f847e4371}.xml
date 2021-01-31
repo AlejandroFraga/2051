@@ -61,6 +61,13 @@
 	<object class="GroupTrack" id="{150779bf-222a-44b5-ad7d-a7355a7ef31b}">
 		<relationship name="modules">
 			<destination>{c5cc2b32-8a8a-4b6b-9b04-7ed5d9d7ef08}</destination>
+			<destination>{215df1f0-1fe0-45b5-89c0-921c236273f9}</destination>
+			<destination>{e4cc543d-bf39-40bc-952d-08f25f0ee398}</destination>
+			<destination>{fd757615-7a02-44ae-8569-60d1012be7b4}</destination>
+			<destination>{333333c6-f6c5-4dfa-aefa-c829fe40ca1e}</destination>
+			<destination>{13434c90-015b-4798-8517-abe2f3ce604f}</destination>
+			<destination>{42e6965d-a580-4ea2-818c-080c96c3d6d5}</destination>
+			<destination>{64e86e55-0200-42d8-8b26-dcad7e612d13}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{0d786777-159b-412b-a2cb-99f5ec70aa55}</destination>
@@ -69,6 +76,13 @@
 	<object class="Timeline" id="{e12e3514-ddd0-46f6-bddd-3f436f216bc8}">
 		<relationship name="modules">
 			<destination>{c5cc2b32-8a8a-4b6b-9b04-7ed5d9d7ef08}</destination>
+			<destination>{215df1f0-1fe0-45b5-89c0-921c236273f9}</destination>
+			<destination>{e4cc543d-bf39-40bc-952d-08f25f0ee398}</destination>
+			<destination>{fd757615-7a02-44ae-8569-60d1012be7b4}</destination>
+			<destination>{333333c6-f6c5-4dfa-aefa-c829fe40ca1e}</destination>
+			<destination>{13434c90-015b-4798-8517-abe2f3ce604f}</destination>
+			<destination>{42e6965d-a580-4ea2-818c-080c96c3d6d5}</destination>
+			<destination>{64e86e55-0200-42d8-8b26-dcad7e612d13}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{e45ea798-f1c8-436b-8019-a4c67fccd5a3}">
@@ -91,6 +105,83 @@
 	<object class="SingleSound" id="{c5cc2b32-8a8a-4b6b-9b04-7ed5d9d7ef08}">
 		<property name="length">
 			<value>16</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{a8011580-6078-4f97-9c32-2e89db01b1eb}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{215df1f0-1fe0-45b5-89c0-921c236273f9}">
+		<property name="start">
+			<value>16</value>
+		</property>
+		<property name="length">
+			<value>16</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{a8011580-6078-4f97-9c32-2e89db01b1eb}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{e4cc543d-bf39-40bc-952d-08f25f0ee398}">
+		<property name="start">
+			<value>32</value>
+		</property>
+		<property name="length">
+			<value>16</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{a8011580-6078-4f97-9c32-2e89db01b1eb}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{fd757615-7a02-44ae-8569-60d1012be7b4}">
+		<property name="start">
+			<value>48</value>
+		</property>
+		<property name="length">
+			<value>16</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{a8011580-6078-4f97-9c32-2e89db01b1eb}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{333333c6-f6c5-4dfa-aefa-c829fe40ca1e}">
+		<property name="start">
+			<value>64</value>
+		</property>
+		<property name="length">
+			<value>16</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{a8011580-6078-4f97-9c32-2e89db01b1eb}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{13434c90-015b-4798-8517-abe2f3ce604f}">
+		<property name="start">
+			<value>80</value>
+		</property>
+		<property name="length">
+			<value>16</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{a8011580-6078-4f97-9c32-2e89db01b1eb}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{42e6965d-a580-4ea2-818c-080c96c3d6d5}">
+		<property name="start">
+			<value>96</value>
+		</property>
+		<property name="length">
+			<value>16</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{a8011580-6078-4f97-9c32-2e89db01b1eb}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{64e86e55-0200-42d8-8b26-dcad7e612d13}">
+		<property name="start">
+			<value>112</value>
+		</property>
+		<property name="length">
+			<value>8</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{a8011580-6078-4f97-9c32-2e89db01b1eb}</destination>
