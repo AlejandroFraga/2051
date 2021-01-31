@@ -42,6 +42,26 @@ MonoBehaviour:
   ID:
     data1: 0
     data2: 0
+  Exists: 0
+--- !u!114 &-7841116824633944468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Intro/TAP
+  m_EditorClassIdentifier: 
+  Name: TAP
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
   Exists: 1
 --- !u!114 &-7526990535781746597
 MonoBehaviour:
@@ -184,7 +204,7 @@ MonoBehaviour:
   Path: ../2051-FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637476909373164021
+  lastModified: 637476920001794875
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -320,7 +340,7 @@ MonoBehaviour:
   Path: ../2051-FMOD/Build/Desktop/BancoPrueba.bank
   Name: BancoPrueba
   StudioPath: bank:/BancoPrueba
-  lastModified: 637476909373721782
+  lastModified: 637476920001526071
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -367,7 +387,7 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -8257116176804756402}
+  - {fileID: -7841116824633944468}
   MinDistance: 0
   MaxDistance: 0
   Length: 27299
@@ -483,7 +503,7 @@ MonoBehaviour:
   - {fileID: 6016997252463461547}
   StringsBanks:
   - {fileID: -6315173917442316224}
-  stringsBankWriteTime: 637476909373164021
+  stringsBankWriteTime: 637476920001794875
   cacheVersion: 6
 --- !u!114 &442654051786646063
 MonoBehaviour:
@@ -658,7 +678,7 @@ MonoBehaviour:
   Path: ../2051-FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637476909373113980
+  lastModified: 637476920001784902
   LoadResult: 0
   FileSizes: []
   Exists: 1
