@@ -75,7 +75,6 @@ public class YogaController : MonoBehaviour
     {
         if (!m_VideoPostureImage || m_VideoPostures.Count < 1) return;
 
-        // FIXME
         m_Completed = false;
         m_DonePostures = new List<int>();
         for (int i = 0; i < m_VideoSliders.Count; i++)
@@ -83,7 +82,6 @@ public class YogaController : MonoBehaviour
             m_VideoSliders[i].value = 0;
             m_VideoSlidersFills[i].sprite = m_VideoSliderFillMain;
         }
-        // FIXME
 
         m_VideoSlider = m_VideoSliders[m_DonePostures.Count];
 
@@ -117,11 +115,15 @@ public class YogaController : MonoBehaviour
             {
                 if (m_Points > 2)
                 {
+                    // Acabas el juego y ganaste
+
                     m_ScreenMessage.text = "Completed!";
                     m_Completed = true;
                 }
                 else
                 {
+                    // Acabas el juego y perdiste, empieza de nuevo
+
                     Start();
                 }
             }
@@ -132,6 +134,8 @@ public class YogaController : MonoBehaviour
 
             if (m_VideoSlider.value == m_VideoSlider.maxValue)
             {
+                // Acabas bien la postura
+
                 m_VideoSlidersFills[m_DonePostures.Count - 1].sprite = m_VideoSliderFillGreen;
 
                 m_Points++;
@@ -149,6 +153,8 @@ public class YogaController : MonoBehaviour
 
             if (m_Countdown == 0)
             {
+                // Acabas mal la postura
+
                 m_VideoSlider.value = m_VideoSlider.maxValue;
                 m_VideoSlidersFills[m_DonePostures.Count - 1].sprite = m_VideoSliderFillRed;
 
@@ -211,6 +217,8 @@ public class YogaController : MonoBehaviour
 
     public void PreviousPosture()
     {
+        // Botón izquierda
+
         if (m_Completed) return;
 
         m_SelectedPosture += m_Postures.Count - 1;
@@ -220,6 +228,8 @@ public class YogaController : MonoBehaviour
 
     public void NextPosture()
     {
+        // Botón derecha
+
         if (m_Completed) return;
 
         m_SelectedPosture++;
@@ -229,6 +239,8 @@ public class YogaController : MonoBehaviour
 
     public void HoldPostureDown()
     {
+        // Aguantar la postura
+
         if (m_Completed) return;
 
         if (m_VideoPosture == m_SelectedPosture)
@@ -241,6 +253,8 @@ public class YogaController : MonoBehaviour
 
     public void HoldPostureUp()
     {
+        // Cuando dejas de aguantar la postura
+
         m_Holding = false;
     }
 
