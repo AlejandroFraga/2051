@@ -84,7 +84,7 @@ public class BreadController : MonoBehaviour
                 {
                     UpdateOven();
 
-                    Debug.Log("Bread ready");
+                    // Acaba el horno
                 }
                 else if (m_OvenState < newState)
                 {
@@ -134,6 +134,8 @@ public class BreadController : MonoBehaviour
 
     void UpdateIngredients()
     {
+        // Ingrediente añadido. m_BowlState == 1 => Harina, 2 => Agua, 3 => Sal, 4 => Levadura 
+
         m_FlourDAD.m_CanMove = m_BowlState == 0;
         m_WaterDAD.m_CanMove = m_BowlState == 1;
         m_SaltDAD.m_CanMove = m_BowlState == 2;
@@ -174,15 +176,15 @@ public class BreadController : MonoBehaviour
     {
         if (m_Completed) return;
 
+        // Amasas
+
         if (m_BowlState > 3 && m_Kneaded < m_KneadTimes)
         {
             m_Kneaded++;
             UpdateBowl();
         }
         else
-        {
             ChangeToOven();
-        }
     }
 
     void ChangeToOven()
@@ -209,6 +211,8 @@ public class BreadController : MonoBehaviour
     {
         if (m_OvenState == 0)
         {
+            // Metes en el horno
+
             m_BreadDAD.RestartPosition();
             m_BreadDAD.m_CanMove = false;
             m_BreadDAD.gameObject.SetActive(false);
@@ -230,44 +234,24 @@ public class BreadController : MonoBehaviour
     {
         if (m_OvenState == m_OvenStates.Count - 2)
         {
+            // Sacas del horno
+
             UpdateOven();
             m_OvenController.SetActive(false);
             m_CookedController.SetActive(true);
-        }
-
-        else if (m_OvenState == m_OvenStates.Count - 1)
-        {
-            if (m_WaterLevel > 0)
-            {
-                Debug.Log("Next Bread");
-
-                ChangeToMixing();
-            }
-            else
-            {
-                m_Completed = true;
-                Debug.Log("Completed");
-            }
         }
     }
 
     public void GetBreadDone()
     {
-        if (m_OvenState == m_OvenStates.Count - 2)
-            UpdateOven();
-
-        else if (m_OvenState == m_OvenStates.Count - 1)
+        if (m_OvenState == m_OvenStates.Count - 1)
         {
             if (m_WaterLevel > 0)
-            {
-                Debug.Log("Next Bread");
-
                 ChangeToMixing();
-            }
+
             else
             {
                 m_Completed = true;
-                Debug.Log("Completed");
             }
         }
     }

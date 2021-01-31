@@ -64,7 +64,7 @@ public class VideoCallController : MonoBehaviour
 
     public float m_timer_mensaje = 0.0f;
 
-    public float m_timer_mensaje_period = 3.0f;
+    public float m_timer_mensaje_period = 2.0f;
 
     public bool m_IsShaking = false;
 
@@ -107,7 +107,10 @@ public class VideoCallController : MonoBehaviour
         
         if (Time.time > m_NextBatteryTime) // Lógica de gasto de batería
         {
-            
+            if (m_BatteryState == 3)
+            {
+                return;
+            }
             m_NextBatteryTime = Time.time + m_UpdatePeriodBattery;
             UpdateBattery();
 
@@ -167,6 +170,7 @@ public class VideoCallController : MonoBehaviour
         if (m_BatteryState==3)
         {
             m_timer_mensaje = Time.time + 2;
+            m_UpdatePeriodBattery = (m_UpdatePeriodBattery / 2) - 2;
         }
 
     }
