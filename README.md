@@ -36,6 +36,6 @@ Javier Pérez (Twitter: @javipercor)
 
 ### Music
 
-Carlos de la Fuente
+Carlos de la Fuente (Instagram: @juanmena_music)
 
-Juan Mena
+Juan Mena (Twitter: @Carlostrombon7)
