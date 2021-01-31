@@ -112,6 +112,8 @@ public class BreadController : MonoBehaviour
         m_MixingPanel.SetActive(true);
 
         RestartMixing();
+
+        m_Bowl.sprite = m_BowlStates[m_BowlState];
     }
 
     void RestartMixing()

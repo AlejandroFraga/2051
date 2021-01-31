@@ -75,6 +75,8 @@ public class VideoCallController : MonoBehaviour
 
     public Image m_background_fin = default;
 
+    bool m_Completed = false;
+
     public FMOD.Studio.EventInstance aSoundInstanceTalk;
     public FMOD.Studio.EventInstance aSoundInstanceTeclado;
 
@@ -118,6 +120,15 @@ public class VideoCallController : MonoBehaviour
     // Update to modify hour and battery
     void Update() 
     {
+        if (m_Completed)
+        {
+            System.Threading.Thread.Sleep(2000);
+
+            PlayerData.m_VideoCallCompleted = true;
+
+            SceneManager.LoadScene("RoomScene");
+        }
+
         if (m_IsShaking)
         {
             Vector3 position = NoConnection.transform.position;
@@ -148,14 +159,7 @@ public class VideoCallController : MonoBehaviour
                 GameObjectHelper.SetVisible(m_BatteryImage, false);
                 GameObjectHelper.SetVisible(m_HourImage, false);
                 GameObjectHelper.SetVisible(m_ConnectionImage, false);
-
-
-                PlayerData.m_VideoCallCompleted = true;
-                aSoundInstanceTalk.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-                aSoundInstanceTeclado.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-
-                SceneManager.LoadScene("RoomScene");
-
+                m_Completed = true;
                 return;
             }
             m_NextBatteryTime = Time.time + m_UpdatePeriodBattery;
