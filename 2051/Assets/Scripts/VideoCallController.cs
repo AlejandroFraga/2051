@@ -259,7 +259,6 @@ public class VideoCallController : MonoBehaviour
     private void SpawnNoConnection()
     {
         // LowBattery Message (called from UpdateConnection)
-        NoConnection.transform.position = new Vector3(Random.Range(100f, 200f), Random.Range(100f, 200f), 0f) ;
         m_IsShaking = true;
         NoConnection.SetActive(true);
         aSoundInstanceTalk.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
