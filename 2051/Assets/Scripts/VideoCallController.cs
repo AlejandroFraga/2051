@@ -266,8 +266,9 @@ public class VideoCallController : MonoBehaviour
 
     public void MessageAPop()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/VIDEOLLAMADA/Click", transform.position);
         // Random appearance of message options
-            m_MessageA.SetActive(false);
+        m_MessageA.SetActive(false);
             m_MessageB.SetActive(false);
             GameObjectHelper.SetVisible(m_MessageA_Image, true);
 
@@ -275,6 +276,7 @@ public class VideoCallController : MonoBehaviour
 
     public void MessageFinAPop()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/VIDEOLLAMADA/Click", transform.position);
         // Random appearance of message options
         m_MessageFinA.SetActive(false);
         m_MessageFinB.SetActive(false);
@@ -286,8 +288,9 @@ public class VideoCallController : MonoBehaviour
     }
     public void MessageBPop()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/VIDEOLLAMADA/Click", transform.position);
         // Random appearance of message options
-            m_MessageA.SetActive(false);
+        m_MessageA.SetActive(false);
             m_MessageB.SetActive(false);
             GameObjectHelper.SetVisible(m_MessageB_Image, true);
         
@@ -296,6 +299,7 @@ public class VideoCallController : MonoBehaviour
 
     public void MessageFinBPop()
     {
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/VIDEOLLAMADA/Click", transform.position);
         // Random appearance of message options
         m_MessageFinA.SetActive(false);
         m_MessageFinB.SetActive(false);

@@ -1807,8 +1807,8 @@ MonoBehaviour:
   - {fileID: 1173307051}
   - {fileID: 1347421085}
   - {fileID: 238970485}
-  m_timer_mensaje: 3
-  m_timer_mensaje_period: 3
+  m_timer_mensaje: 2
+  m_timer_mensaje_period: 2
   m_IsShaking: 0
   m_Shake_Force: 3
 --- !u!1 &1681183195
