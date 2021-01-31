@@ -74,6 +74,7 @@ public class BreadController : MonoBehaviour
         {
             if (m_OvenCounter < m_OvenTime)
             {
+                
                 m_OvenCounter = Mathf.Min(m_OvenTime, m_OvenCounter + Time.deltaTime);
 
                 m_OvenTimer.transform.RotateAround(m_OvenTimer.transform.position, new Vector3(0, 0, 1), 360 * (Time.deltaTime / m_OvenTime));
@@ -84,7 +85,7 @@ public class BreadController : MonoBehaviour
                 {
                     UpdateOven();
 
-                    FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/PAN/Horno", transform.position);
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/PAN/Campana horno", transform.position);
 
                     // Acaba el horno
                 }
@@ -163,6 +164,21 @@ public class BreadController : MonoBehaviour
             if (m_BowlState == 2)
                 UseWater();
         }
+
+        //El terror del sonido
+        if (m_BowlState == 1) {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/PAN/Harina", transform.position);
+        } else if (m_BowlState == 2)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/PAN/Echar agua", transform.position);
+        } else if (m_BowlState == 3)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/PAN/Salero", transform.position);
+        } else if (m_BowlState == 4)
+        {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/PAN/Salero", transform.position);
+        }
+
     }
 
     void UseWater()
@@ -184,6 +200,9 @@ public class BreadController : MonoBehaviour
         {
             m_Kneaded++;
             UpdateBowl();
+            
+             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/PAN/Amasar", transform.position);
+            
         }
         else
             ChangeToOven();
