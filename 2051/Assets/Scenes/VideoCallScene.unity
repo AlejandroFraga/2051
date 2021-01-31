@@ -1753,8 +1753,8 @@ MonoBehaviour:
   - {fileID: 1173307051}
   - {fileID: 1347421085}
   - {fileID: 238970485}
-  m_timer_mensaje: 3
-  m_timer_mensaje_period: 6
+  m_timer_mensaje: 2
+  m_timer_mensaje_period: 4
 --- !u!1 &1681183195
 GameObject:
   m_ObjectHideFlags: 0
