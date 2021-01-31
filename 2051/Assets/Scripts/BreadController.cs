@@ -113,7 +113,7 @@ public class BreadController : MonoBehaviour
 
         RestartMixing();
 
-        InitMixing();
+        m_Bowl.sprite = m_BowlStates[m_BowlState];
     }
 
     void RestartMixing()
