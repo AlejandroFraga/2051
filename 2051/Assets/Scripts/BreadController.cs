@@ -208,7 +208,7 @@ public class BreadController : MonoBehaviour
              FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/PAN/Amasar", transform.position);
             
         }
-        else
+        else if(m_BowlState > 3)
             ChangeToOven();
     }
 
