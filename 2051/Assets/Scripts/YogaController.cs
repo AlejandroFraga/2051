@@ -71,6 +71,11 @@ public class YogaController : MonoBehaviour
 
     public GameObject m_NextButton = default;
 
+
+    //Sound
+
+    FMOD.Studio.EventInstance yogaSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -144,6 +149,8 @@ public class YogaController : MonoBehaviour
             {
                 // Acabas bien la postura
 
+                FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/YOGA/Reward", transform.position);
+
                 m_VideoSlidersFills[m_DonePostures.Count - 1].sprite = m_VideoSliderFillGreen;
 
                 m_Points++;
@@ -151,6 +158,8 @@ public class YogaController : MonoBehaviour
                 m_ScreenMessage.text = "Nice!";
 
                 m_BeforeCountdown = true;
+                
+                
             }
         }
         else if (m_VideoSlider.value == 0)
@@ -163,12 +172,16 @@ public class YogaController : MonoBehaviour
             {
                 // Acabas mal la postura
 
+                FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/YOGA/Fail", transform.position);
+
                 m_VideoSlider.value = m_VideoSlider.maxValue;
                 m_VideoSlidersFills[m_DonePostures.Count - 1].sprite = m_VideoSliderFillRed;
 
                 m_ScreenMessage.text = "Bad!";
 
                 m_BeforeCountdown = true;
+
+
             }
         }
     }
@@ -232,6 +245,10 @@ public class YogaController : MonoBehaviour
         m_SelectedPosture += m_Postures.Count - 1;
         m_SelectedPosture %= m_Postures.Count;
         m_SelectedPostureImage.sprite = m_Postures[m_SelectedPosture];
+
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/YOGA/Botones", transform.position);
+
+
     }
 
     public void NextPosture()
@@ -243,11 +260,15 @@ public class YogaController : MonoBehaviour
         m_SelectedPosture++;
         m_SelectedPosture %=  m_Postures.Count;
         m_SelectedPostureImage.sprite = m_Postures[m_SelectedPosture];
+
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/YOGA/Botones", transform.position);
     }
 
     public void HoldPostureDown()
     {
         // Aguantar la postura
+
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/YOGA/Esterilla", transform.position);
 
         if (m_Completed) return;
 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{321baee2-c2e9-4f77-93bc-7d3ae27d5df0}">
+		<property name="assetPath">
+			<value>2051_hab.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>70.20002267573696</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{2055dcde-3a0c-453c-950c-2797b68b159e}</destination>
+		</relationship>
+	</object>
+</objects>

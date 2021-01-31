@@ -76,6 +76,7 @@ public class BreadController : MonoBehaviour
         {
             if (m_OvenCounter < m_OvenTime)
             {
+                
                 m_OvenCounter = Mathf.Min(m_OvenTime, m_OvenCounter + Time.deltaTime);
 
                 m_OvenTimer.transform.RotateAround(m_OvenTimer.transform.position, new Vector3(0, 0, 1), 360 * (Time.deltaTime / m_OvenTime));
@@ -85,6 +86,8 @@ public class BreadController : MonoBehaviour
                 if (m_OvenCounter == m_OvenTime)
                 {
                     UpdateOven();
+
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/PAN/Campana horno", transform.position);
 
                     // Acaba el horno
                 }
@@ -163,6 +166,21 @@ public class BreadController : MonoBehaviour
             if (m_BowlState == 2)
                 UseWater();
         }
+
+        //El terror del sonido
+        if (m_BowlState == 1) {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/PAN/Harina", transform.position);
+        } else if (m_BowlState == 2)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/PAN/Echar agua", transform.position);
+        } else if (m_BowlState == 3)
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/PAN/Salero", transform.position);
+        } else if (m_BowlState == 4)
+        {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/PAN/Salero", transform.position);
+        }
+
     }
 
     void UseWater()
@@ -184,6 +202,9 @@ public class BreadController : MonoBehaviour
         {
             m_Kneaded++;
             UpdateBowl();
+            
+             FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/PAN/Amasar", transform.position);
+            
         }
         else
             ChangeToOven();
@@ -215,6 +236,8 @@ public class BreadController : MonoBehaviour
         {
             // Metes en el horno
 
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/PAN/Meter bandeja", transform.position);
+
             m_BreadDAD.RestartPosition();
             m_BreadDAD.m_CanMove = false;
             m_BreadDAD.gameObject.SetActive(false);
@@ -237,6 +260,8 @@ public class BreadController : MonoBehaviour
         if (m_OvenState == m_OvenStates.Count - 2)
         {
             // Sacas del horno
+
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/PAN/Sacar bandeja", transform.position);
 
             UpdateOven();
             m_OvenController.SetActive(false);
