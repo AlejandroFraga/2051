@@ -84,6 +84,8 @@ public class BreadController : MonoBehaviour
                 {
                     UpdateOven();
 
+                    FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/PAN/Horno", transform.position);
+
                     // Acaba el horno
                 }
                 else if (m_OvenState < newState)
@@ -213,6 +215,8 @@ public class BreadController : MonoBehaviour
         {
             // Metes en el horno
 
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/PAN/Meter bandeja", transform.position);
+
             m_BreadDAD.RestartPosition();
             m_BreadDAD.m_CanMove = false;
             m_BreadDAD.gameObject.SetActive(false);
@@ -235,6 +239,8 @@ public class BreadController : MonoBehaviour
         if (m_OvenState == m_OvenStates.Count - 2)
         {
             // Sacas del horno
+
+            FMODUnity.RuntimeManager.PlayOneShot("event:/SFX/PAN/Sacar bandeja", transform.position);
 
             UpdateOven();
             m_OvenController.SetActive(false);
