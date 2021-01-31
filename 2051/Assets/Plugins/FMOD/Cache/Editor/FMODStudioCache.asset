@@ -1,5 +1,194 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8435928678058816932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/PAN/Harina
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/PAN/Harina
+  guid: 0bc2f0d09ae84f49a9a99cf8e428a66e
+  Banks:
+  - {fileID: -3811895995562617445}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3430
+--- !u!114 &-8257116176804756402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Intro/TAP
+  m_EditorClassIdentifier: 
+  Name: TAP
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &-7841116824633944468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Intro/TAP
+  m_EditorClassIdentifier: 
+  Name: TAP
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-7526990535781746597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Intro/TAP
+  m_EditorClassIdentifier: 
+  Name: TAP
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &-7272647844431575219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/YOGA/Esterilla
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/YOGA/Esterilla
+  guid: 395a51a2b3b25d4281da472c1660a272
+  Banks:
+  - {fileID: -3811895995562617445}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 387
+--- !u!114 &-7174078754878232171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/YOGA/Reward
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/YOGA/Reward
+  guid: 21148dd855a82f448f5b0bae7b68bceb
+  Banks:
+  - {fileID: -3811895995562617445}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1764
+--- !u!114 &-7065200944866045175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Intro/TAP
+  m_EditorClassIdentifier: 
+  Name: TAP
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &-6784755985229181871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Intro/TAP
+  m_EditorClassIdentifier: 
+  Name: TAP
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &-6364036450501449661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Intro/TAP
+  m_EditorClassIdentifier: 
+  Name: TAP
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-6315173917442316224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,12 +204,262 @@ MonoBehaviour:
   Path: ../2051-FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637476883431168165
+  lastModified: 637476920001794875
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 744
+    Value: 1752
   Exists: 1
+--- !u!114 &-6267364488192771081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/YOGA
+  m_EditorClassIdentifier: 
+  Path: event:/MUSIC/YOGA
+  guid: 42ec7fb4cb9dee4ca89b5f872cc11ce5
+  Banks:
+  - {fileID: -3811895995562617445}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 57600
+--- !u!114 &-6151756014209293004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/PAN/Sacar bandeja
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/PAN/Sacar bandeja
+  guid: 2cbb3dee2397eb4a916228e13b9b0b12
+  Banks:
+  - {fileID: -3811895995562617445}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1200
+--- !u!114 &-5725117372386275066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/PAN/Horno
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/PAN/Horno
+  guid: 88f10831b5fa524ebf8aa0ae9b26e88c
+  Banks:
+  - {fileID: -3811895995562617445}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 132189
+--- !u!114 &-5389355933285301752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/PAN/Campana horno
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/PAN/Campana horno
+  guid: 65cf07e8252c094787171810c2a4567c
+  Banks:
+  - {fileID: -3811895995562617445}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1500
+--- !u!114 &-3970167809014648532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/2051_lo_fi
+  m_EditorClassIdentifier: 
+  Path: event:/MUSIC/2051_lo_fi
+  guid: fe559d0720d97448816e8452672bb8ba
+  Banks:
+  - {fileID: -3811895995562617445}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 67764
+--- !u!114 &-3811895995562617445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/BancoPrueba.bank
+  m_EditorClassIdentifier: 
+  Path: ../2051-FMOD/Build/Desktop/BancoPrueba.bank
+  Name: BancoPrueba
+  StudioPath: bank:/BancoPrueba
+  lastModified: 637476920001526071
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-3469297519027462114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/SFX/YOGA/Respiraci\xF3n"
+  m_EditorClassIdentifier: 
+  Path: "event:/SFX/YOGA/Respiraci\xF3n"
+  guid: d3be7efd5409ab4bbd5e4c2d5de14ab9
+  Banks:
+  - {fileID: -3811895995562617445}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 18492
+--- !u!114 &-2311120546827063953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/Intro
+  m_EditorClassIdentifier: 
+  Path: event:/MUSIC/Intro
+  guid: 9df9576fe7ef7945b3d7432e408fe462
+  Banks:
+  - {fileID: -3811895995562617445}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -7841116824633944468}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 27299
+--- !u!114 &-1914469729628203127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/VIDEOLLAMADA/Pop
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/VIDEOLLAMADA/Pop
+  guid: 0d881ba66be2e546aaf484afdc214c57
+  Banks:
+  - {fileID: -3811895995562617445}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 198
+--- !u!114 &-510300549271855745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/YOGA/Timer
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/YOGA/Timer
+  guid: 3f2cbc007c24d14f916d5b6f847e4371
+  Banks:
+  - {fileID: -3811895995562617445}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 16000
+--- !u!114 &-229721310826641163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/VIDEOLLAMADA/BLABLA
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/VIDEOLLAMADA/BLABLA
+  guid: 1cd2e0ade819b149b3e23a58d19e3e7f
+  Banks:
+  - {fileID: -3811895995562617445}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 61000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36,14 +475,194 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: -6315173917442316224}
   - {fileID: 6016997252463461547}
-  EditorEvents: []
+  - {fileID: -3811895995562617445}
+  EditorEvents:
+  - {fileID: -8435928678058816932}
+  - {fileID: -1914469729628203127}
+  - {fileID: -229721310826641163}
+  - {fileID: -7174078754878232171}
+  - {fileID: -6151756014209293004}
+  - {fileID: 6227057455340213697}
+  - {fileID: -7272647844431575219}
+  - {fileID: -510300549271855745}
+  - {fileID: -6267364488192771081}
+  - {fileID: 3028353473523286311}
+  - {fileID: -5389355933285301752}
+  - {fileID: 2295749416958320504}
+  - {fileID: 2357012699939740159}
+  - {fileID: 1328415532812869290}
+  - {fileID: -5725117372386275066}
+  - {fileID: -2311120546827063953}
+  - {fileID: 8113545649162023740}
+  - {fileID: -3469297519027462114}
+  - {fileID: 5207852075579902838}
+  - {fileID: 5046293634465002079}
+  - {fileID: -3970167809014648532}
   EditorParameters: []
   MasterBanks:
   - {fileID: 6016997252463461547}
   StringsBanks:
   - {fileID: -6315173917442316224}
-  stringsBankWriteTime: 637476883431168165
+  stringsBankWriteTime: 637476920001794875
   cacheVersion: 6
+--- !u!114 &442654051786646063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Intro/TAP
+  m_EditorClassIdentifier: 
+  Name: TAP
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &1328415532812869290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/YOGA/Fail
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/YOGA/Fail
+  guid: 876a59ca559b484d92faead6292fd584
+  Banks:
+  - {fileID: -3811895995562617445}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1063
+--- !u!114 &2295749416958320504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/VIDEOLLAMADA/Click
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/VIDEOLLAMADA/Click
+  guid: 7d8137220e79ed46be8293786221fb8f
+  Banks:
+  - {fileID: -3811895995562617445}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 536
+--- !u!114 &2357012699939740159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/VIDEOLLAMADA/Teclado
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/VIDEOLLAMADA/Teclado
+  guid: 8301bcd37a594540a4dc18d4ee3755ee
+  Banks:
+  - {fileID: -3811895995562617445}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10272
+--- !u!114 &3028353473523286311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/TAP INICIO
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/TAP INICIO
+  guid: 57c0c1abd9d18241bf8aea7b13c3b3ce
+  Banks:
+  - {fileID: -3811895995562617445}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1628
+--- !u!114 &5046293634465002079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/TAP MENU
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/TAP MENU
+  guid: f704a2b5a41a094f8ada15639c088cb3
+  Banks:
+  - {fileID: -3811895995562617445}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 45
+--- !u!114 &5207852075579902838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/YOGA/Botones
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/YOGA/Botones
+  guid: ec61afd222dc7b4a817946a279948fc6
+  Banks:
+  - {fileID: -3811895995562617445}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 128
 --- !u!114 &6016997252463461547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,7 +678,73 @@ MonoBehaviour:
   Path: ../2051-FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637476883431158155
+  lastModified: 637476920001784902
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &6227057455340213697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/2051
+  m_EditorClassIdentifier: 
+  Path: event:/MUSIC/2051
+  guid: 367546ffa506144c9755d681bcbdea41
+  Banks:
+  - {fileID: -3811895995562617445}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 70000
+--- !u!114 &6684470063777988495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Intro/TAP
+  m_EditorClassIdentifier: 
+  Name: TAP
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &8113545649162023740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/PAN/Meter bandeja
+  m_EditorClassIdentifier: 
+  Path: event:/SFX/PAN/Meter bandeja
+  guid: c661f53a2b92bc4288fd1376b52671f2
+  Banks:
+  - {fileID: -3811895995562617445}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1400
