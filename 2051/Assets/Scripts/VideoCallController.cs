@@ -52,6 +52,14 @@ public class VideoCallController : MonoBehaviour
 
     public Image m_MessageB_Image = default;
 
+    public GameObject m_MessageFinA = default;
+
+    public Image m_MessageFinA_Image = default;
+
+    public GameObject m_MessageFinB = default;
+
+    public Image m_MessageFinB_Image = default;
+
     public List<Image> m_chatting = default;
 
     public float m_timer_mensaje = 0.0f;
@@ -72,6 +80,10 @@ public class VideoCallController : MonoBehaviour
         m_MessageB.SetActive(false);
         GameObjectHelper.SetVisible(m_MessageA_Image, false);
         GameObjectHelper.SetVisible(m_MessageB_Image, false);
+        m_MessageFinA.SetActive(false);
+        m_MessageFinB.SetActive(false);
+        GameObjectHelper.SetVisible(m_MessageFinA_Image, false);
+        GameObjectHelper.SetVisible(m_MessageFinB_Image, false);
         GameObjectHelper.SetVisible(m_chatting[0], false);
         GameObjectHelper.SetVisible(m_chatting[1], false);
         GameObjectHelper.SetVisible(m_chatting[2], false);
@@ -83,7 +95,7 @@ public class VideoCallController : MonoBehaviour
     { 
         if (Time.time > m_NextBatteryTime) // Lógica de gasto de batería
         {
-            if (m_BatteryState == 3) return;
+            
             m_NextBatteryTime = Time.time + m_UpdatePeriodBattery;
             UpdateBattery();
 
@@ -102,24 +114,33 @@ public class VideoCallController : MonoBehaviour
         {
             if (Time.time > m_NextConnectionTime) // Lógica pérdida de conexión
             {
-                m_NextConnectionTime = Time.time + m_ConnectionCheckPeriod;
-                UpdateConnection();
-
-
+                if (m_BatteryState != 3)
+                {
+                    m_NextConnectionTime = Time.time + m_ConnectionCheckPeriod;
+                    UpdateConnection();
+                }
 
             }
             if (Time.time > m_timer_mensaje) // Lógica Mensajes Ajenos
             {
                 ChatPop();
                 m_timer_mensaje = Time.time + m_timer_mensaje_period;
-                if (Random.Range(0, 10) > 4)
+                if (m_BatteryState == 3)
                 {
-                    ChatPush();
+                    m_timer_mensaje = Time.time + 1000;
+                    MessageFinPush();
                 }
                 else
                 {
-                    MessagePush();
+                    if (Random.Range(0, 10) > 3)
+                    {
+                        ChatPush();
+                    }
+                    else
+                    {
+                        MessagePush();
 
+                    }
                 }
 
             }
@@ -131,6 +152,10 @@ public class VideoCallController : MonoBehaviour
         // Update Battery with timer
         m_BatteryState++;
         m_BatteryImage.sprite = m_battery[m_BatteryState];
+        if (m_BatteryState==3)
+        {
+            m_timer_mensaje = Time.time + 2;
+        }
 
     }
 
@@ -164,15 +189,15 @@ public class VideoCallController : MonoBehaviour
     private void SpawnNoConnection()
     {
         // LowBattery Message (called from UpdateConnection)
-        NoConnection.transform.position = new Vector3(Random.Range(100f, 200f), Random.Range(100f, 200f), 0f);
+        NoConnection.transform.position = new Vector3(Random.Range(100f, 200f) + (Mathf.Sin(Time.time * 1.0f) * 1.0f), Random.Range(100f, 200f) + (Mathf.Sin(Time.time * 1.0f) * 1.0f), 0f);
         NoConnection.SetActive(true);
+
 
     }
 
     public void DestroyNoConnection()
     {
-        // LowBattery Message (called from battery degradation)
-        //GameObjectHelper.SetVisible('imagen', false);
+
         m_ConnectionImage.sprite = m_Connection[0];
         m_FlagConnection = 1;
         NoConnection.SetActive(false);
@@ -197,28 +222,71 @@ public class VideoCallController : MonoBehaviour
         GameObjectHelper.SetVisible(m_MessageB_Image, false);
         m_MessageA.SetActive(false);
         m_MessageB.SetActive(false);
+        GameObjectHelper.SetVisible(m_MessageFinA_Image, false);
+        GameObjectHelper.SetVisible(m_MessageFinB_Image, false);
+        m_MessageFinA.SetActive(false);
+        m_MessageFinB.SetActive(false);
     }
 
     public void MessagePush()
     {
         // Random conversation between participants 
-        m_MessageA.SetActive(true);
-        m_MessageB.SetActive(true);
+
+            m_MessageA.SetActive(true);
+            m_MessageB.SetActive(true);
+    }
+    public void MessageFinPush()
+    {
+        // Random conversation between participants 
+
+            m_MessageFinA.SetActive(true);
+            m_MessageFinB.SetActive(true);
+            m_MessageA.SetActive(false);
+            m_MessageB.SetActive(false);
+
 
     }
 
     public void MessageAPop()
     {
         // Random appearance of message options
-        m_MessageA.SetActive(false);
-        GameObjectHelper.SetVisible(m_MessageA_Image, true);
+            m_MessageA.SetActive(false);
+            m_MessageB.SetActive(false);
+            GameObjectHelper.SetVisible(m_MessageA_Image, true);
+
     }
 
+    public void MessageFinAPop()
+    {
+        // Random appearance of message options
+        m_MessageFinA.SetActive(false);
+        m_MessageFinB.SetActive(false);
+        GameObjectHelper.SetVisible(m_MessageFinA_Image, true);
+        GameObjectHelper.SetVisible(m_chatting[0], true);
+        GameObjectHelper.SetVisible(m_chatting[1], true);
+        GameObjectHelper.SetVisible(m_chatting[2], true);
+        GameObjectHelper.SetVisible(m_chatting[3], true);
+    }
     public void MessageBPop()
     {
         // Random appearance of message options
-        m_MessageB.SetActive(false);
-        GameObjectHelper.SetVisible(m_MessageB_Image, true);
+            m_MessageA.SetActive(false);
+            m_MessageB.SetActive(false);
+            GameObjectHelper.SetVisible(m_MessageB_Image, true);
+        
+
+    }
+
+    public void MessageFinBPop()
+    {
+        // Random appearance of message options
+        m_MessageFinA.SetActive(false);
+        m_MessageFinB.SetActive(false);
+        GameObjectHelper.SetVisible(m_MessageFinB_Image, true);
+        GameObjectHelper.SetVisible(m_chatting[0], true);
+        GameObjectHelper.SetVisible(m_chatting[1], true);
+        GameObjectHelper.SetVisible(m_chatting[2], true);
+        GameObjectHelper.SetVisible(m_chatting[3], true);
     }
 
 }
