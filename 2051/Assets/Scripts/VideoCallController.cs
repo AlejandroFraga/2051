@@ -149,7 +149,10 @@ public class VideoCallController : MonoBehaviour
                 GameObjectHelper.SetVisible(m_HourImage, false);
                 GameObjectHelper.SetVisible(m_ConnectionImage, false);
 
+
                 PlayerData.m_VideoCallCompleted = true;
+                aSoundInstanceTalk.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+                aSoundInstanceTeclado.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
 
                 SceneManager.LoadScene("RoomScene");
 
