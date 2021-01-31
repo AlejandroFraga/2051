@@ -69,7 +69,10 @@ public class VideoCallController : MonoBehaviour
     public bool m_IsShaking = false;
 
     public int m_Shake_Force = 3;
-    
+
+    public Image m_background = default;
+
+    public Image m_background_fin = default;
 
 
     // Start is called before the first frame update
@@ -92,6 +95,12 @@ public class VideoCallController : MonoBehaviour
         GameObjectHelper.SetVisible(m_chatting[1], false);
         GameObjectHelper.SetVisible(m_chatting[2], false);
         GameObjectHelper.SetVisible(m_chatting[3], false);
+        GameObjectHelper.SetVisible(m_background, true);
+        GameObjectHelper.SetVisible(m_background_fin, false);
+
+        
+        
+        
     }
 
     // Update to modify hour and battery
@@ -109,6 +118,24 @@ public class VideoCallController : MonoBehaviour
         {
             if (m_BatteryState == 3)
             {
+                GameObjectHelper.SetVisible(m_background, false);
+                GameObjectHelper.SetVisible(m_background_fin, true);
+                NoConnection.SetActive(false);
+                m_MessageA.SetActive(false);
+                m_MessageB.SetActive(false);
+                GameObjectHelper.SetVisible(m_MessageA_Image, false);
+                GameObjectHelper.SetVisible(m_MessageB_Image, false);
+                m_MessageFinA.SetActive(false);
+                m_MessageFinB.SetActive(false);
+                GameObjectHelper.SetVisible(m_MessageFinA_Image, false);
+                GameObjectHelper.SetVisible(m_MessageFinB_Image, false);
+                GameObjectHelper.SetVisible(m_chatting[0], false);
+                GameObjectHelper.SetVisible(m_chatting[1], false);
+                GameObjectHelper.SetVisible(m_chatting[2], false);
+                GameObjectHelper.SetVisible(m_chatting[3], false);
+                GameObjectHelper.SetVisible(m_BatteryImage, false);
+                GameObjectHelper.SetVisible(m_HourImage, false);
+                GameObjectHelper.SetVisible(m_ConnectionImage, false);
                 return;
             }
             m_NextBatteryTime = Time.time + m_UpdatePeriodBattery;
@@ -170,7 +197,7 @@ public class VideoCallController : MonoBehaviour
         if (m_BatteryState==3)
         {
             m_timer_mensaje = Time.time + 2;
-            m_UpdatePeriodBattery = (m_UpdatePeriodBattery / 2) - 2;
+            m_NextBatteryTime = Time.time + (m_UpdatePeriodBattery / 4) + 1;
         }
 
     }
