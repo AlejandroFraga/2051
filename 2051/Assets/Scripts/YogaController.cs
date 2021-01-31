@@ -2,6 +2,7 @@
 using TMPro;
 using Unity.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class YogaController : MonoBehaviour
@@ -119,6 +120,13 @@ public class YogaController : MonoBehaviour
 
                     m_ScreenMessage.text = "Completed!";
                     m_Completed = true;
+
+                    // Save the completed level
+                    PlayerData playerData = SaveSystem.Load();
+                    playerData.m_BreadCompleted = true;
+                    SaveSystem.Save(playerData);
+
+                    SceneManager.LoadScene("RoomScene");
                 }
                 else
                 {

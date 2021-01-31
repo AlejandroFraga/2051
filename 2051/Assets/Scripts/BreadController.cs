@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using Unity.Collections;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class BreadController : MonoBehaviour
@@ -252,6 +254,13 @@ public class BreadController : MonoBehaviour
             else
             {
                 m_Completed = true;
+
+                // Save the completed level
+                PlayerData playerData = SaveSystem.Load();
+                playerData.m_BreadCompleted = true;
+                SaveSystem.Save(playerData);
+
+                SceneManager.LoadScene("RoomScene");
             }
         }
     }
