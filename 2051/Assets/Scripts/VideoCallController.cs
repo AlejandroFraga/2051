@@ -122,6 +122,9 @@ public class VideoCallController : MonoBehaviour
     {
         if (m_Completed)
         {
+            aSoundInstanceTalk.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+            aSoundInstanceTeclado.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+
             System.Threading.Thread.Sleep(2000);
 
             PlayerData.m_VideoCallCompleted = true;
