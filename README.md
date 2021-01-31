@@ -2,7 +2,7 @@
 
 ![Banner 2051](https://github.com/AlejandroFraga/2051/blob/main/images/banner-web.png?raw=true)
 
-Game made fot the [Global Game Jam](https://globalgamejam.org) 2021
+This game was made for the 2021's [Global Game Jam](https://globalgamejam.org)
 
 <img src="https://github.com/AlejandroFraga/2051/blob/main/images/ggj-2021.jpg" width="410" height="180" />
 
