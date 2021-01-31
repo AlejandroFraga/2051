@@ -1,6 +1,6 @@
 # [2051](https://leavemeal0ne.itch.io/2051)
 
-# [Global Game Jam](https://globalgamejam.org) 2021
+Game made fot the [Global Game Jam](https://globalgamejam.org) 2021
 
 it is the year 2051, the year in which you had proposed to open the time capsule that you prepared 30 years ago, which contains the experiences you had in 2020, during the global pandemic caused by COVID-19.
 
