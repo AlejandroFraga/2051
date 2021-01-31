@@ -156,7 +156,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -66, y: -205.22}
-  m_SizeDelta: {x: 117.7779, y: 38.440994}
+  m_SizeDelta: {x: 117.77789, y: 38.44098}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &35124057
 MonoBehaviour:
@@ -312,7 +312,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 64.68, y: -203.89}
+  m_AnchoredPosition: {x: 64.67999, y: -203.89001}
   m_SizeDelta: {x: 117.77789, y: 35.823364}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &161595533
@@ -386,7 +386,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24, y: 202.06303}
+  m_AnchoredPosition: {x: 24, y: 202.06305}
   m_SizeDelta: {x: 95.35402, y: 34.956238}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &238970485
@@ -739,8 +739,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -65.99999, y: -203.90001}
-  m_SizeDelta: {x: 117.77786, y: 35.850616}
+  m_AnchoredPosition: {x: -66, y: -203.90002}
+  m_SizeDelta: {x: 117.77786, y: 35.850586}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &683243356
 MonoBehaviour:
@@ -868,8 +868,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 64.67999, y: -203.92131}
-  m_SizeDelta: {x: 117.7779, y: 35.85062}
+  m_AnchoredPosition: {x: 64.67999, y: -203.92133}
+  m_SizeDelta: {x: 117.77789, y: 35.850586}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &829326092
 MonoBehaviour:
@@ -1386,11 +1386,15 @@ MonoBehaviour:
   m_UpdatePeriodBattery: 20
   m_Hour:
   - {fileID: 21300000, guid: de7c40715489e5247806cb484449da5e, type: 3}
+  - {fileID: 21300000, guid: 518cdd4f7d864714590fef3525b52829, type: 3}
   - {fileID: 21300000, guid: 75f33016005a692458474bcfc9548080, type: 3}
+  - {fileID: 21300000, guid: f3283b4d51d2bc9459c643a0806aceeb, type: 3}
   - {fileID: 21300000, guid: 70a39a05e70bd354ca0f7e315d387284, type: 3}
+  - {fileID: 21300000, guid: 7ccf4b859ab80414e8a25ed280a22140, type: 3}
   - {fileID: 21300000, guid: 42c5968b8dfd29b428ade104cc4fbf8f, type: 3}
   m_HourImage: {fileID: 1078044232}
   m_HourState: 0
+  m_UpdatePeriodHour: 10
   m_Connection:
   - {fileID: 21300000, guid: 7b6342affacc28740b49bcc0ff97a48d, type: 3}
   - {fileID: 21300000, guid: e220ca5322c77f943a0440d701ef0441, type: 3}
