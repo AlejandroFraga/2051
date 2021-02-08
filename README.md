@@ -16,8 +16,6 @@ All these mini-games are about activities carried out by many of us during the 2
 
 Game made for Global Game Jam 2021. theme was lost & found: our take on the theme is the lost of the routines we used to have before the pandemic, which forced us to find new habits and routines.
 
-Thanks :)
-
 ## Gameplay
 
 <img src="https://github.com/AlejandroFraga/2051/blob/main/images/02-yoga.png" width="270" height="480" />
