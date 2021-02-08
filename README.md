@@ -16,10 +16,6 @@ All these mini-games are about activities carried out by many of us during the 2
 
 Game made for Global Game Jam 2021. theme was lost & found: our take on the theme is the lost of the routines we used to have before the pandemic, which forced us to find new habits and routines.
 
-Disclaimer #1: we're aware of zoom problems while playing on phone browsers. if you're playing from your phone, download the apk below. 
-
-Disclaimer #2: if you have zoom problems on your browser from your computer, try pressing Control - to reduce your browser's zoom.
-
 Thanks :)
 
 ## Gameplay
