@@ -12,13 +12,13 @@ EditorBuildSettings:
     path: Assets/Scenes/RoomScene.unity
     guid: 5153bbb4754f27b41b7cae4ffa17d5ac
   - enabled: 1
-    path: Assets/Scenes/YogaScene.unity
+    path: Assets/Scenes/MiniGames/YogaScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/VideoCallScene.unity
+    path: Assets/Scenes/MiniGames/VideoCallScene.unity
     guid: c0b10d2cec5888246933a119358fb0d8
   - enabled: 1
-    path: Assets/Scenes/BreadScene.unity
+    path: Assets/Scenes/MiniGames/BreadScene.unity
     guid: b836f3ab28409ad498943a561aef1b0e
   - enabled: 1
     path: Assets/Scenes/EndingScene.unity
