@@ -50,6 +50,7 @@ public class ResponsiveUIElement : MonoBehaviour
     void Start()
     {
         m_RectTransform = GetComponent<RectTransform>();
+        UpdateIfChanged();
     }
 
     // Update is called once per frame
@@ -100,8 +101,7 @@ public class ResponsiveUIElement : MonoBehaviour
         if (m_Width > 0)
             GameObjectHelper.SetWidth(m_RectTransform, m_Width);
 
-        if (m_PosX > 0)
-            GameObjectHelper.SetLocalPositionX(m_RectTransform, m_PosX);
+        GameObjectHelper.SetLocalPositionX(m_RectTransform, m_PosX);
     }
 
     /// <summary>
@@ -117,8 +117,7 @@ public class ResponsiveUIElement : MonoBehaviour
         if (m_Width > 0)
             GameObjectHelper.SetWidth(m_RectTransform, m_Width * aspectRatioRel);
 
-        if (m_PosX > 0)
-            GameObjectHelper.SetLocalPositionX(m_RectTransform, m_PosX * aspectRatioRel);
+        GameObjectHelper.SetLocalPositionX(m_RectTransform, m_PosX * aspectRatioRel);
     }
 
     /// <summary>
