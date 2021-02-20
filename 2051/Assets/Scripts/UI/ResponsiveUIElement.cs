@@ -1,15 +1,9 @@
 ﻿using UnityEngine;
-using TMPro;
 
 
 [ExecuteInEditMode, RequireComponent(typeof(RectTransform))]
 public class ResponsiveUIElement : MonoBehaviour
 {
-    /// <summary>
-    /// Last size of the window
-    /// </summary>
-    Vector2 m_LastWindowSize = default;
-
     [Tooltip("Position on the x-axis of the UI element.")]
     public float m_PosX = default;
 
@@ -18,11 +12,6 @@ public class ResponsiveUIElement : MonoBehaviour
 
     [Tooltip("Desired aspect ratio of the UI element.")]
     static float m_DesiredAspectRatio = (1080.0f / 1920.0f);
-
-    /// <summary>
-    /// Controls if the aspect ratio is greater than the desired
-    /// </summary>
-    bool m_GreaterAspectRatio = false;
 
     /// <summary>
     /// Rect transform component of the game object
@@ -50,32 +39,14 @@ public class ResponsiveUIElement : MonoBehaviour
     void Start()
     {
         m_RectTransform = GetComponent<RectTransform>();
-        UpdateIfChanged();
+        UpdateByAspectRatio();
     }
 
     // Update is called once per frame
     void Update()
     {
         // If the width is negative, something went wrong, so we force the update
-        UpdateIfChanged(m_RectTransform.rect.width < 0);
-    }
-
-    /// <summary>
-    /// Updates the UI element by the aspect ratio if the window size changed or force update is set to true
-    /// </summary>
-    /// <param name="forceUpdate">Forces the update of the UI element by the aspect ratio</param>
-    void UpdateIfChanged(bool forceUpdate = false)
-    {
-        // If the window size changed or we force an update
-        Vector2 windowSize = new Vector2(Screen.width, Screen.height);
-        if (windowSize != m_LastWindowSize || forceUpdate)
-        {
-            // Register the new window size and recalculate if the aspect ratio is greater
-            m_LastWindowSize = windowSize;
-            m_GreaterAspectRatio = CurrentAspectRatio() > m_DesiredAspectRatio;
-
-            UpdateByAspectRatio();
-        }
+        UpdateByAspectRatio();
     }
 
     /// <summary>
@@ -83,7 +54,7 @@ public class ResponsiveUIElement : MonoBehaviour
     /// </summary>
     void UpdateByAspectRatio()
     {
-        if (m_GreaterAspectRatio)
+        if (CurrentAspectRatio() > m_DesiredAspectRatio)
             UpdateByGreaterAspectRatio();
 
         else

@@ -1,5 +1,4 @@
 ﻿
-[System.Serializable]
 public static class PlayerData
 {
     /// <summary>
