@@ -12,10 +12,10 @@
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/webGL.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body>
+  <body style="background-color: #433455;">
     <div class="webgl-content">
-      <div id="unityContainer" style="width: 720px; height: 1280px"></div>
-      <div class="footer">
+      <div id="unityContainer" style="width: 100vw; height: 100vh"></div>
+      <div class="footer" style="position: fixed; left: 0; bottom: 0; width: 100%;">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
         <div class="title">GGJ_2051</div>
