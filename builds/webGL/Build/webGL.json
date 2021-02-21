@@ -1,7 +1,7 @@
 {
 "companyName": "G_11",
-"productName": "GGJ_2051",
-"productVersion": "0.1",
+"productName": "2051",
+"productVersion": "2.2",
 "dataUrl": "webGL.data.unityweb",
 "wasmCodeUrl": "webGL.wasm.code.unityweb",
 "wasmFrameworkUrl": "webGL.wasm.framework.unityweb",
