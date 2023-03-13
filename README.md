@@ -12,7 +12,7 @@ Game made for the [Global Game Jam](https://globalgamejam.org) of 2021. The them
 
 ## Description
 
-![Banner 2051](https://github.com/AlejandroFraga/2051/blob/main/images/banner-web.png?raw=true)
+<img src="https://github.com/AlejandroFraga/2051/blob/main/images/banner-web.png" width="720"/>
 
 It is the year 2051, the year in which you had proposed to open the time capsule that you prepared 30 years ago, which contains the experiences you had in 2020, during the global pandemic caused by COVID-19.
 
@@ -24,7 +24,7 @@ All these mini-games are about activities carried out by many of us during the 2
 
 ### Gameplay and screeshots
 
-<p float="left">
+<p>
   <img src="https://github.com/AlejandroFraga/2051/blob/main/images/02-yoga.png" width="180"/>
   <img src="https://github.com/AlejandroFraga/2051/blob/main/images/03-video-call.png" width="180"/>
   <img src="https://github.com/AlejandroFraga/2051/blob/main/images/04-bread.png" width="180"/>
