@@ -2,7 +2,7 @@
 
 Game made for the [Global Game Jam](https://globalgamejam.org) of 2021. The theme was lost & found: our take on the theme is the lost of the routines we used to have before the pandemic, which forced us to find new habits and routines. It can be played [here](https://leavemeal0ne.itch.io/2051).
 
-<img src="https://github.com/AlejandroFraga/2051/blob/main/images/ggj-2021.jpg" width="410"/>
+<img src="https://github.com/AlejandroFraga/2051/blob/main/images/ggj-2021.jpg" width="360"/>
 
 ## Table of contents
 
@@ -12,7 +12,7 @@ Game made for the [Global Game Jam](https://globalgamejam.org) of 2021. The them
 
 ## Description
 
-<img src="https://github.com/AlejandroFraga/2051/blob/main/images/banner-web.png" width="720"/>
+<img src="https://github.com/AlejandroFraga/2051/blob/main/images/banner-web.png" width="730"/>
 
 It is the year 2051, the year in which you had proposed to open the time capsule that you prepared 30 years ago, which contains the experiences you had in 2020, during the global pandemic caused by COVID-19.
 
